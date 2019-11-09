@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Aplicación con Sockets</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="Chart.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Mi encuesta</h1>
+  <form onsubmit="return addMessage(this)" id="opciones">
+      <label>Pop</label>
+      <input type="radio" name="deporte" value="0">
+      <label>Rap</label>
+      <input type="radio" name="deporte" value="1">
+      <label>Reggaeton</label>
+      <input type="radio" name="deporte" value="2">
+      <label>Otro</label>
+      <input type="radio" name="deporte" value="3">
+      <canvas id="myChart" width="500" height="500"></canvas>
+    <input type="submit"   value="Enviar!">
+  </form>
+</body>
+  <script src="main.js"></script>
+</html>
