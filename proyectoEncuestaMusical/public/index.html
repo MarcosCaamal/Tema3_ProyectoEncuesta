@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css" type="text/css">
   <title>My Aplicación con Sockets</title>
   <script src="/socket.io/socket.io.js"></script>
   <script src="Chart.js"></script>
@@ -11,18 +12,45 @@
 </head>
 <body>
   <h1>Mi encuesta</h1>
-  <form onsubmit="return addMessage(this)" id="opciones">
-      <label>Pop</label>
-      <input type="radio" name="deporte" value="0">
-      <label>Rap</label>
-      <input type="radio" name="deporte" value="1">
-      <label>Reggaeton</label>
-      <input type="radio" name="deporte" value="2">
-      <label>Otro</label>
-      <input type="radio" name="deporte" value="3">
-      <canvas id="myChart" width="500" height="500"></canvas>
-    <input type="submit"   value="Enviar!">
-  </form>
+  <div class="container">
+    <div class="wrapper">
+      <ul class="steps">
+        <li class="is-active">Elige una opcion</li>
+      </ul>
+      <form class="form-wrapper" id="opciones" onsubmit="return addMessage(this)">
+        <fieldset class="section is-active">
+          <h3>¿Cual es tu genero de musica preferida?</h3>
+          <div class="row cf">
+            <div class="four col">
+              <input type="radio" name="deporte" id="r1" value="0">
+              <label for="r1">
+                <h4>Pop</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" name="deporte" id="r2" value="1"><label for="r2">
+                <h4>Rap</h4>
+              </label>
+            </div>
+            <div class="four col">
+              <input type="radio" name="deporte" id="r3" value="2"><label for="r3">
+                <h4>Reggaeton</h4>
+              </label>
+            </div>
+            <div class="four col">
+                <input type="radio" name="deporte" id="r4" value="3">
+                <label for="r4">
+                  <h4>Otro</h4>
+                </label>
+            </div>
+          </div>
+          <canvas id="myChart" width="500" height="500"></canvas>
+          <input class="button" type="submit" value="Enviar!">
+     
+        </fieldset>
+      </form>
+    </div>
+  </div>
 </body>
   <script src="main.js"></script>
 </html>
