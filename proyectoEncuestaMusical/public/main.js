@@ -83,9 +83,9 @@ function addMessage(e) {
 
  var objForm = document.getElementById('opciones')
   var selec;
-  for (x = 0; x < objForm.deporte.length; x++)
-  if (objForm.deporte[x].checked) {
-  selec=objForm.deporte[x].value;
+  for (x = 0; x < objForm.musica.length; x++)
+  if (objForm.musica[x].checked) {
+  selec=objForm.musica[x].value;
   
   }
   message={
