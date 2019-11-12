@@ -63,7 +63,7 @@ var myLineChart = Chart.Bar(canvas,{
 });
 
 //Código del servidor
-var socket = io.connect('http://localhost:8088', { 'forceNew': true });
+var socket = io.connect('http://192.168.43.89:8088', { 'forceNew': true });
 
 socket.on('messages', function(data) {
   console.log(data);
