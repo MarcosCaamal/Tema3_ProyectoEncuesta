@@ -60,11 +60,22 @@
           </div>
           <canvas id="myChart" width="650" height="440"></canvas>
           <input class="button" type="submit" value="Enviar!">
+          <input class="button" type="button" id="aparecer" value="Enviar..."> 
      
         </fieldset>
       </form>
     </div>
   </div>
+
+  <script>
+      let boton=document.getElementById("btnsubmit");
+      let boton2=document.getElementById("aparecer");
+      boton.addEventListener("click",
+      function(evento){
+        boton.style.display="none";
+        boton2.style.display="block";
+      });
+    </script>
 </body>
   <script src="main.js"></script>
 </html>
