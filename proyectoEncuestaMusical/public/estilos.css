@@ -147,7 +147,7 @@ html, body{
   }
   
   .btn{
-    display: :none;
+    display:none;
     position: absolute;
     background-color: #3498db;
     padding: 8px 30px;
